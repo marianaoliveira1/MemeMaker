@@ -1,10 +1,11 @@
+import Home from './pages/home'
 import GlobalStyle from './styles/global'
 
 function App() {
   return (
     <> 
     <GlobalStyle />
-      <h1>Meme</h1>
+      <Home />
     </>
   );
 }
