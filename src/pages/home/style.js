@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div `
     width: 100%;
     height: 100vh;
     display: flex;
@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
 `;
 
-export const Card = styled.div`
+export const Card = styled.div `
   background: #fff ;
   width: 550px;
   border-radius: 8px;
@@ -24,7 +24,7 @@ export const Card = styled.div`
   }
 `;
 
-export const Templetes = styled.div`
+export const Templetes = styled.div `
     width: 100%;
     height: 90px;
     background: #eee;
@@ -44,9 +44,14 @@ export const Templetes = styled.div`
             height: 53px;
         }
     }
+
+    .button img {
+        width: 53px;
+        height: 53px;
+    }
 `;
 
-export  const Form = styled.form`
+export const Form = styled.form `
     input {
         width: 100%;
         height: 40px;
@@ -58,7 +63,7 @@ export  const Form = styled.form`
     }
 `;
 
-export const Button = styled.button`
+export const Button = styled.button `
     width: 100%;
     height: 40px;
     border-radius: 8px;
@@ -68,6 +73,11 @@ export const Button = styled.button`
     color: #fff;
     transition: 0.2s ease-in;
     font-size: 14px;
+    border: 2px solid transparent;
+
+    &.selected {
+        border-color: #4395D8;
+    }
 
     &:hover {
         background: #3672A3;
