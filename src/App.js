@@ -1,6 +1,11 @@
+import GlobalStyle from './styles/global'
+
 function App() {
   return (
-    <h1>meme</h1>
+    <> 
+    <GlobalStyle />
+      <h1>Meme</h1>
+    </>
   );
 }
 
