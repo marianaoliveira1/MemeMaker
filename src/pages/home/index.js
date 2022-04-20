@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import qs from 'qs';
 
-// import { Wrapper, Card, Templates, Form, Button } from './styles';
 import { Wrapper, Card, Templetes, Form, Button} from "./style";
 import logo from '../../images/logo.svg'
 
@@ -103,52 +102,3 @@ export default function Home() {
     </Wrapper>
   );
 }
-
-
-// import React, { useEffect, useState } from "react";
-// import { Wrapper, Card, Templetes, Form, Button} from "./style";
-
-// import logo from '../../images/logo.svg'
-
-// export default function Home() {
-
-//     const [templates, setTemplates] = useState([]);
-//     const [selectedTemplate, setselectedTemplate] = useEffect(null);
-
-//     useEffect(() => {
-//         (async () => {
-//           const resp = await fetch('https://api.imgflip.com/get_memes');
-//           const { data: { memes } } = await resp.json();
-//           setTemplates(memes);
-//         })();
-//       }, []);
-//     return (
-//     <Wrapper>
-//          <img src={logo} alt="logo"/>
-//          <Card>
-//              <h2> Selecione um template</h2>
-//              <Templetes>
-//                 {
-//                     templates.map((templete) => (
-//                         <button
-//                             key={templete.id}
-//                             type="button"
-//                             // onClick={() => setselectedTemplate(templete)}
-//                             // className={templete.id === selectedTemplate?.id && 'selected'}
-//                         >
-//                             <img src={templete.url} alt={templates.name} />
-//                         </button>
-//                     ))}
-//              </Templetes>
-
-//              <h2>Textos</h2>
-//              <Form>
-//                  <input placeholder="Texto #1" />
-//                  <input placeholder="Texto #2" />
-
-//                  <Button type="submit">MakeMyMeme</Button>
-//              </Form>
-//          </Card>
-//     </Wrapper>
-//     );
-// }

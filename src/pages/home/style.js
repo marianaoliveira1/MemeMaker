@@ -35,13 +35,14 @@ export const Templetes = styled.div `
     padding: 0 15px;
     margin-bottom: 20px;
 
-    .button {
+    button {
         border: 0;
         background: transparent;
         margin-right: 10px;
         img{
             width: 53px;
             height: 53px;
+            object-fit: cover;
         }
     }
 
